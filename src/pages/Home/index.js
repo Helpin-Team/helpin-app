@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 import LinearGradient from 'react-native-linear-gradient';
@@ -23,6 +24,8 @@ class Home extends React.Component {
 
     return (
       <Container>
+        <StatusBar background={colors.lightBlue} />
+
         <LinearGradient style={[styles.Banner, { paddingTop: 40 }]} colors={[colors.primary, colors.lightBlue]}>
           <UserInfo />
 

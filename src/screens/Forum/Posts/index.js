@@ -3,12 +3,14 @@ import { View } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import { Transition } from 'react-navigation-fluid-transitions';
 
-import { FloatChat, Button, Post } from '../../../components';
+import {
+  FloatChat, Button, Post, Select,
+} from '../../../components';
 
-import { Text } from './styles';
 import {
   Container, Chat, Tabs, styles,
 } from '../styles';
+import { SelectContainer } from './styles';
 
 function Posts({ navigation }) {
   const initialType = navigation.getParam('type');
@@ -41,9 +43,30 @@ function Posts({ navigation }) {
         </View>
       </Transition>
 
-      <Text>
-        <Post />
-      </Text>
+      <SelectContainer>
+        <Select items={['teste', 'test2']} />
+      </SelectContainer>
+
+      <Post
+        status={false}
+        date="21 jan 2019 15:24"
+        title="Problema para configurar react native"
+        course="Análise e desenvolvimento de sistemas"
+      />
+
+      <Post
+        status={false}
+        date="21 jan 2019 15:24"
+        title="Problema para configurar react native"
+        course="Análise e desenvolvimento de sistemas"
+      />
+
+      <Post
+        status={false}
+        date="21 jan 2019 15:24"
+        title="Problema para configurar react native"
+        course="Análise e desenvolvimento de sistemas"
+      />
     </Container>
   );
 }

@@ -4,10 +4,11 @@ import Issues from './Issues';
 import Header from './Header';
 import Button from './Button';
 import Avatar from './Avatar';
-import FloatChat from './FloatChat';
+import Select from './Select';
+import Courses from './Courses';
 import UserInfo from './UserInfo';
 import Dissolve from './Dissolve';
-import Courses from './Courses';
+import FloatChat from './FloatChat';
 
 export {
   Post,
@@ -16,6 +17,7 @@ export {
   Button,
   Avatar,
   Issues,
+  Select,
   Courses,
   Dissolve,
   UserInfo,

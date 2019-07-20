@@ -4,4 +4,6 @@ export const Container = styled.View`
 
 `;
 
-export const Text = styled.Text``;
+export const SelectContainer = styled.View`
+  margin: 0 auto;
+`;
